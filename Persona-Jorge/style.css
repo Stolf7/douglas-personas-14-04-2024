@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+/*svg color: #1c71d8*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 600px) {
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .container-persona{
+        position: relative;
+        width: 500;
+        height: 600;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        scale: 0.8;
+        margin-bottom: 300px !important;
+    }
+
+    .container-persona .texto-persona{
+        width: 450px !important;
+        height: 300px;
+        position: relative;
+        display: flex;
+    }
+
+    .container-persona .img-persona-jorge{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .container-cards {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 1400px) {
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .container-persona{
+        position: relative;
+        width: 500;
+        height: 600;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        scale: 0.9;
+        margin-bottom: 310px !important;
+    }
+
+    .container-persona .texto-persona{
+        width: 450px !important;
+        height: 300px;
+        position: relative;
+        display: flex;
+    }
+
+    .container-persona .img-persona-jorge{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .container-cards {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+}
+
+body {
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #0868b2, #2563eb, #4f46e5);
+    scale: 0.9;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    scale: 0.9;
+}
+
+.card:hover {
+    height: 450px;
+}
+
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.card .read-more {
+   background: linear-gradient(90deg, #3730a3, #7e22ce);
+   padding: 12px;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 8px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-persona{
+    height: 580px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-persona .persona-img .img-persona{
+    border-radius: 300px;
+    background-color:#2563eb;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.5);
+}
+
+.container-persona .persona-img .img-persona-jorge{
+    position: relative;
+    border-radius: 600px;
+    background-color:#2563eb;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.5);
+    width: 500px;
+}
+
+.container-persona .texto-persona{
+    position: relative;
+    width: 30%;
+    padding: 26px;
+    margin: 12px;
+    font-size: 18px;
+    color: white;
+}
+
+.container-persona .texto-persona span{
+    font-size: 36px;
+}
+
+.container-cards .card .content h2{
+    color:#2563eb;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.container-cards .card .content p{
+    color:#021b52;
+}
+
+.container-cards .card .content ul li{
+    color:#021b52;
+}
